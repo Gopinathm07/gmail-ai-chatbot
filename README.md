@@ -1,77 +1,60 @@
 📬 Gmail + Groq AI Chat Assistant
-This is a personal side project I built that combines Gmail, AI, and a bit of clever UI using Jupyter Notebook widgets.
+This is a lightweight project that connects to your Gmail, fetches recent emails, and allows you to ask questions about them using Groq’s DeepSeek LLM.
+It’s built in Python using Jupyter Notebook with a simple UI powered by ipywidgets.
 
-The idea is simple:
+🔍 What It Does
+Fetches email content from your Gmail account
 
-"What if I could ask questions about my emails like I'm chatting with an AI?"
+Lets you ask AI questions about your latest email
 
-So I built it — this project connects to your Gmail inbox, fetches real email content, and lets you chat with Groq’s DeepSeek model to understand, summarize, or ask anything about those emails.
+Cleans and decodes email content
 
-It’s like ChatGPT for Gmail — but lightweight, private, and fully in your control.
+Uses Groq’s DeepSeek model to respond intelligently
 
-✨ What it Can Do
-🔍 Search your Gmail using natural language (with AI help)
+Works entirely inside a Jupyter Notebook
 
-📬 Fetch actual email subjects and content
+🚀 How to Run
+Clone this repository
 
-🧹 Clean & decode raw email data into plain readable text
+Install dependencies:
 
-💬 Ask Groq anything about the latest email (e.g., “What’s the summary?” or “Is this urgent?”)
-
-🧠 Uses DeepSeek LLM from Groq via their blazing-fast API
-
-🧰 Simple Jupyter Notebook UI using ipywidgets
-
-💻 Tech Stack
-Python (of course)
-
-Gmail API (OAuth2-based)
-
-Groq API (DeepSeek model)
-
-Jupyter Notebook
-
-ipywidgets for input/output chat flow
-
-dotenv for secret handling
-
-🚀 How to Run It (for real)
-1. Clone the repo
-bash
-Copy
-Edit
-git clone https://github.com/Gopinathm07/gmail-ai-chatbot.git
-cd gmail-ai-chatbot
-2. Install the dependencies
-bash
+nginx
 Copy
 Edit
 pip install -r requirements.txt
-3. Add your Gmail client secret
-Create OAuth credentials from Google Cloud
+Add your Gmail OAuth credentials:
 
-Download the client_secret.json
+Save as client_secret.json
 
-Place it in the root folder
+Place in the root folder
 
-4. Add your Groq API Key
-Create a .env file
-
-Add this inside:
+Add your Groq API key in a .env file:
 
 ini
 Copy
 Edit
-GROQ_API_KEY=your_groq_key_here
-Make sure you have:
+GROQ_API_KEY=your_key_here
+Start the notebook:
 
-bash
-Copy
-Edit
-pip install python-dotenv
-5. Run the Notebook
-bash
+css
 Copy
 Edit
 jupyter notebook main.ipynb
-It’ll authenticate your Gmail, fetch recent emails, and open up a chat input where you can ask AI about what’s in your inbox.
+Authenticate Gmail and start chatting with AI about your inbox.
+
+🛠 Tech Stack
+Python
+
+Gmail API
+
+Groq LLM (DeepSeek)
+
+Jupyter Notebook
+
+ipywidgets
+
+python-dotenv
+
+
+👨‍💻 Author
+Made with curiosity by Gopinath M
